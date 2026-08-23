@@ -5,6 +5,10 @@
 
 DEVICE_PATH := device/samsung/a55x
 
+# Kernel Modules
+PRODUCT_PACKAGES += \
+    toolbox.vendor_ramdisk
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
