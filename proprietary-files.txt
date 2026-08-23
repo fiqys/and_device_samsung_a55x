@@ -3,7 +3,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/a55x
-
-# Security
-VENDOR_SECURITY_PATCH := 2026-05-05
+# Proprietary files - from A556BXXSECZDE, unless pinned

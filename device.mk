@@ -7,3 +7,6 @@ DEVICE_PATH := device/samsung/a55x
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
+# Inherit from the proprietary version
+$(call inherit-product-if-exists, vendor/samsung/a55x/a55x-vendor.mk)
