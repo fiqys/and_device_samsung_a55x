@@ -5,6 +5,9 @@
 
 DEVICE_PATH := device/samsung/a55x
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Platform
 BOARD_SHIPPING_API_LEVEL := 34
 PRODUCT_BRAND := samsung
