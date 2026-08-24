@@ -93,6 +93,19 @@ $(call soong_config_set_bool,exynos_audio,use_usb_offload,true)
 $(call soong_config_set,exynos_audio,proxy_header,//$(LOCAL_PATH):audio_proxy_headers)
 $(call soong_config_set,exynos_audio,sec_resampler_library,//vendor/samsung/a55x:libSamsungPostProcessConvertor)
 
+# Codec2
+PRODUCT_PACKAGES += \
+    samsung.hardware.media.c2-service \
+    libExynosC2ComponentStore \
+    libExynosC2H264Dec \
+    libExynosC2H264Enc \
+    libExynosC2HevcDec \
+    libExynosC2HevcEnc \
+    libExynosC2Vp8Dec \
+    libExynosC2Vp8Enc \
+    libExynosC2Vp9Dec \
+    libExynosC2Vp9Enc
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
