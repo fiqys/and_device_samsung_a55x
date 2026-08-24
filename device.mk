@@ -53,6 +53,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.s5e8845 \
+    init.recovery.s5e8845.rc \
+    init.s5e8845.rc \
+    init.samsung.rc \
+    ueventd.s5e8845.rc
+
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
