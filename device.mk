@@ -96,6 +96,11 @@ $(call soong_config_set,exynos_audio,sec_resampler_library,//vendor/samsung/a55x
 # Gatekeeper
 PRODUCT_PACKAGES += android.hardware.gatekeeper-service.teegris
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.samsung \
+    android.hardware.health-service.samsung-recovery
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.s5e8845 \
