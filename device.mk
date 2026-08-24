@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
+# Kernel
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Kernel Modules
 PRODUCT_PACKAGES += \
     toolbox.vendor_ramdisk
