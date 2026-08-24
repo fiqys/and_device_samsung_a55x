@@ -116,3 +116,10 @@ prebuilt_firmware {
         default: false,
     }),
 }
+
+prebuilt_etc {
+    name: "wpa_supplicant.conf",
+    src: ":wpa_supplicant_conf_gen",
+    sub_dir: "wifi",
+    vendor: true,
+}
