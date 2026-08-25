@@ -102,6 +102,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     hardware/samsung_slsi/libbt/conf/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf
 
+# Boot Control
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.exynos \
+    android.hardware.boot-service.exynos_recovery
+
 # Codec2
 PRODUCT_PACKAGES += \
     samsung.hardware.media.c2-service \
